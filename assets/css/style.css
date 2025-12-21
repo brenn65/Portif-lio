@@ -6,6 +6,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     background-color: #060612;
     height: 100vh;
@@ -27,6 +31,11 @@
     font-size: 4.5rem;
     color: aliceblue;
     text-shadow: 0 0 10px rgba(0, 191, 255, .4);
+}
+
+#sp {
+    margin-top: 10px;
+    font-size: 2rem;
 }
 
 .portfolio {
@@ -87,5 +96,9 @@
 
     .portfolio h1{
         font-size: 1rem;
+    }
+
+    #sp {
+        font-size: 1.2rem;
     }
 }
