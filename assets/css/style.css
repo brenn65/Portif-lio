@@ -42,7 +42,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 150vh;
+    height: 140vh;
     background-color: #0a1020;
 }
 
@@ -113,6 +113,74 @@ html {
     }
 }
 
+
+.about {
+    height: 1vh;
+    background-color: #0a1020;
+}
+
+.about h2 {
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 191, 255, .4);
+}
+
+.about p {
+    margin-left: 300px;
+    margin-right: 300px;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.contact {
+    height: 40vh;
+    background-color: #0a1020;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.contact p {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0 40px;
+
+
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact img {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    color: aliceblue;
+    background-color: #060612;
+}
+
+
 @media (max-width: 600px) {
     .hero {
         display: flex;
@@ -121,7 +189,7 @@ html {
     }
 
     .portfolio {
-        height: 110vh;
+        height: 100vh;
     }
 
     .portfolio h1 {
@@ -164,6 +232,14 @@ html {
             height: 300px;
         }
     }
+
+    .about p {
+    margin: 10px 10px;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+}
 
 
 }
