@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-
 }
 
 html {
@@ -12,14 +11,14 @@ html {
 
 .hero {
     background-color: #060612;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
     padding-top: 240px;
-
 }
 
 .hero p {
@@ -42,7 +41,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 140vh;
+    min-height: 140vh;
+    height: auto;
     background-color: #0a1020;
 }
 
@@ -53,7 +53,6 @@ html {
     flex-direction: column;
     align-items: center;
     color: aliceblue;
-
 }
 
 .portfolio p {
@@ -106,25 +105,27 @@ html {
     min-height: 300px;
     min-width: auto;
     scroll-snap-align: center;
-
-    & img {
-        border-radius: 20px;
-        height: 300px;
-    }
 }
 
+.card img {
+    border-radius: 20px;
+    height: 300px;
+}
 
 .about {
-    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
     background-color: #0a1020;
 }
 
 .about h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: aliceblue;
     font-size: 1rem;
     text-align: center;
-    margin-top: -20px;
-    padding-bottom: 10px;
     text-shadow: 0 0 10px rgba(0, 191, 255, .4);
 }
 
@@ -138,31 +139,30 @@ html {
 }
 
 .contact {
-    height: 40vh;
+    min-height: 100px;
+    height: auto;
     background-color: #0a1020;
     color: aliceblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .contact p {
     font-size: 0.8em;
     text-align: center;
     margin: 0 80px;
-
-
 }
 
 .contato {
+    flex-direction: column;
+   padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact img {
-    margin-top: 80px;
+.contact img  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,16 +171,16 @@ html {
 }
 
 footer {
+    min-height: 10vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     text-align: center;
     color: aliceblue;
     background-color: #060612;
 }
-
 
 @media (max-width: 600px) {
     .hero {
@@ -190,7 +190,8 @@ footer {
     }
 
     .portfolio {
-        height: 100vh;
+        min-height: 90vh;
+        height: auto;
     }
 
     .portfolio h1 {
@@ -205,7 +206,6 @@ footer {
     #sp {
         font-size: 1.2rem;
     }
-
 
     .container {
         padding-top: 25px;
@@ -227,20 +227,18 @@ footer {
         min-height: 300px;
         min-width: auto;
         scroll-snap-align: center;
+    }
 
-        & img {
-            border-radius: 20px;
-            height: 300px;
-        }
+    .card img {
+        border-radius: 20px;
+        height: 300px;
     }
 
     .about p {
-    margin: 10px 10px;
-    color: aliceblue;
-    text-align: center;
-    justify-content: center;
-    font-size: 1rem;
-}
-
-
+        margin: 0px 10px;
+        color: aliceblue;
+        text-align: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
 }
